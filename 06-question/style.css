@@ -1,0 +1,53 @@
+:root {
+    --page-background: #f5f3ff;
+    --container-background: #ffffff;
+    --text-color: #1e293b;
+    --title-color: #7c3aed;
+    --border-color: #a78bfa;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--page-background);
+    padding: 30px;
+}
+
+h1 {
+    color: var(--title-color);
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    height: 120px;
+    margin: 40px auto;
+    padding: 15px;
+    background-color: var(--container-background);
+    border: 3px solid var(--border-color);
+}
+
+.container h2 {
+    margin-top: 0;
+    color: var(--title-color);
+}
+
+.visible {
+    overflow: visible;
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.scroll {
+    overflow: scroll;
+}
+
+.auto {
+    overflow: auto;
+}

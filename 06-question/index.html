@@ -2,9 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Експерименти з overflow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>Експерименти з overflow</h1>
+
+<div class="container visible">
+    <h2>overflow: visible</h2>
+    <p>
+        Цей текст не вміщується в контейнер. Значення visible
+        дозволяє вмісту виходити за межі контейнера.
+    </p>
+</div>
+
+<div class="container hidden">
+    <h2>overflow: hidden</h2>
+    <p>
+        Цей текст не вміщується в контейнер. Значення hidden
+        приховує частину вмісту, яка виходить за межі контейнера.
+    </p>
+</div>
+
+<div class="container scroll">
+    <h2>overflow: scroll</h2>
+    <p>
+        Цей текст не вміщується в контейнер. Значення scroll
+        додає смуги прокручування, за допомогою яких можна
+        переглянути весь вміст контейнера.
+    </p>
+</div>
+
+<div class="container auto">
+    <h2>overflow: auto</h2>
+    <p>
+        Цей текст не вміщується в контейнер. Значення auto
+        додає смуги прокручування лише тоді, коли вони потрібні.
+    </p>
+</div>
+
 
 </body>
 </html>
