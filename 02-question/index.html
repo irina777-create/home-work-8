@@ -2,9 +2,61 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Блокові та інлайнові елементи</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
+    <h1>Блокові та інлайнові елементи</h1>
+
+    <div class="block-element">
+        Це перший блоковий елемент div
+    </div>
+
+    <div class="block-element">
+        Це другий блоковий елемент div
+    </div>
+
+    <p>
+        Тег div є
+        <span class="highlight">блоковим елементом</span>,
+        тому він займає всю доступну ширину.
+    </p>
+
+    <p>
+        Тег span є
+        <span class="highlight">інлайновим елементом</span>
+        і займає тільки необхідну ширину.
+    </p>
+
+    <div class="example">
+        <span class="inline-element">Перший span</span>
+        <span class="inline-element">Другий span</span>
+        <span class="inline-element">Третій span</span>
+    </div>
+
+    <h2>Зміна типу відображення</h2>
+
+    <span class="span-block">
+            Цей span перетворений на блоковий елемент
+        </span>
+
+    <div class="div-inline">
+        Цей div перетворений на інлайновий елемент
+    </div>
+
+    <div class="div-inline">
+        Ще один інлайновий div
+    </div>
+
+    <h2>Використання inline-block</h2>
+
+    <div class="buttons">
+        <span class="inline-block-element">HTML</span>
+        <span class="inline-block-element">CSS</span>
+        <span class="inline-block-element">JavaScript</span>
+    </div>
+</div>
 
 </body>
 </html>
