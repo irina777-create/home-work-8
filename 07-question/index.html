@@ -2,9 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Позиціонування елементів</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<header class="fixed-header">
+    position: fixed — я завжди залишаюся зверху екрана
+</header>
+
+<main class="container">
+
+    <h1>Позиціонування елементів у CSS</h1>
+
+    <section class="example">
+        <h2>1. position: static</h2>
+
+        <div class="static-box">
+            Static
+        </div>
+
+        <p>
+            Це стандартне позиціонування. Елемент розташовується
+            у звичайному порядку сторінки.
+        </p>
+    </section>
+
+    <section class="example">
+        <h2>2. position: relative</h2>
+
+        <div class="relative-box">
+            Relative
+        </div>
+
+        <p>
+            Елемент зміщений від свого початкового місця,
+            але його місце на сторінці зберігається.
+        </p>
+    </section>
+
+    <section class="example">
+        <h2>3. position: absolute</h2>
+
+        <div class="parent-box">
+            Батьківський елемент — position: relative
+
+            <div class="absolute-box">
+                Absolute
+            </div>
+        </div>
+
+        <p>
+            Absolute-елемент розташовується відносно найближчого
+            предка з указаним позиціонуванням.
+        </p>
+    </section>
+
+    <section class="sticky-section">
+        <h2 class="sticky-title">
+            position: sticky — прокрути сторінку
+        </h2>
+
+        <p>
+            Sticky-елемент рухається разом зі сторінкою, але після
+            досягнення вказаної позиції тимчасово «прилипає».
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Accusantium aperiam asperiores, assumenda atque autem
+            blanditiis consectetur consequatur corporis.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Adipisci aliquid, aspernatur consequatur consequuntur,
+            deleniti doloremque eaque exercitationem.
+        </p>
+
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Alias amet animi architecto asperiores atque autem.
+        </p>
+    </section>
+
+    <section class="comparison">
+        <h2>Різниця між fixed та sticky</h2>
+
+        <p>
+            <strong>Fixed</strong> завжди залишається на одному місці
+            відносно вікна браузера.
+        </p>
+
+        <p>
+            <strong>Sticky</strong> спочатку знаходиться у звичайному
+            потоці сторінки, а під час прокручування прилипає до
+            зазначеної позиції лише в межах свого контейнера.
+        </p>
+    </section>
+
+</main>
+
+<a class="fixed-button" href="#">
+    Вгору
+</a>
 
 </body>
 </html>

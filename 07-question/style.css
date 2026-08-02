@@ -1,0 +1,150 @@
+:root {
+    --white: #ffffff;
+    --dark: #172033;
+    --background: #f2f5fb;
+
+    --blue: #2563eb;
+    --blue-light: #bfdbfe;
+
+    --purple: #7c3aed;
+    --purple-light: #ddd6fe;
+
+    --green: #16a34a;
+    --green-light: #bbf7d0;
+
+    --yellow: #ca8a04;
+    --yellow-light: #fde68a;
+
+    --pink: #db2777;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding-top: 80px;
+    color: var(--dark);
+    background-color: var(--background);
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+.example,
+.sticky-section,
+.comparison {
+    min-height: 300px;
+    margin: 30px 0;
+    padding: 25px;
+    border: 2px solid var(--blue);
+    border-radius: 15px;
+    background-color: var(--white);
+}
+
+
+
+.static-box {
+    position: static;
+    width: 160px;
+    padding: 25px;
+    border: 3px solid var(--blue);
+    background-color: var(--blue-light);
+    text-align: center;
+}
+
+
+
+.relative-box {
+    position: relative;
+    top: 15px;
+    left: 40px;
+
+    width: 160px;
+    padding: 25px;
+    border: 3px solid var(--purple);
+    background-color: var(--purple-light);
+    text-align: center;
+}
+
+
+
+.parent-box {
+    position: relative;
+    height: 200px;
+    padding: 20px;
+    border: 3px solid var(--green);
+    background-color: var(--green-light);
+}
+
+
+
+.absolute-box {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    width: 150px;
+    padding: 25px;
+    border: 3px solid var(--purple);
+    background-color: var(--purple-light);
+    text-align: center;
+}
+
+
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    width: 100%;
+    padding: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    text-align: center;
+}
+
+
+
+.sticky-section {
+    min-height: 650px;
+}
+
+.sticky-title {
+    position: sticky;
+    top: 65px;
+    z-index: 10;
+
+    padding: 15px;
+    border: 3px solid var(--yellow);
+    background-color: var(--yellow-light);
+}
+
+
+
+.fixed-button {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    padding: 15px 20px;
+    border-radius: 30px;
+    color: var(--white);
+    background-color: var(--pink);
+    text-decoration: none;
+}
