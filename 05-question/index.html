@@ -2,9 +2,68 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Практика з float та clear</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<main class="container">
+    <h1>Практика з float та clear</h1>
+
+    <section class="example">
+        <div class="box box-left">float: left</div>
+
+        <p>
+            Цей текст обтікає блок зліва. Властивість
+            <strong>float: left</strong> розміщує елемент біля лівого
+            краю, а текст займає вільне місце праворуч від нього.
+        </p>
+
+        <p>
+            Наступний абзац також продовжує обтікати блок, доки не
+            закінчиться його висота або не буде застосовано clear.
+        </p>
+
+        <p class="clear-left">
+            До цього абзацу застосовано <strong>clear: left</strong>,
+            тому він починається нижче плаваючого елемента.
+        </p>
+    </section>
+
+    <section class="example">
+        <div class="box box-right">float: right</div>
+
+        <p>
+            Цей текст обтікає блок справа. Властивість
+            <strong>float: right</strong> переміщує елемент до правого
+            краю, а текст розташовується ліворуч.
+        </p>
+
+        <p>
+            Текст продовжує обтікати плаваючий блок справа.
+        </p>
+
+        <p class="clear-right">
+            До цього абзацу застосовано <strong>clear: right</strong>,
+            тому він розташований нижче правого плаваючого елемента.
+        </p>
+    </section>
+
+    <section class="example">
+        <div class="box box-left">Лівий блок</div>
+        <div class="box box-right">Правий блок</div>
+
+        <p>
+            Цей текст знаходиться між двома плаваючими елементами.
+        </p>
+
+        <div class="clear-both"></div>
+
+        <p>
+            Перед цим абзацом використано <strong>clear: both</strong>.
+            Тому він починається нижче обох плаваючих блоків.
+        </p>
+    </section>
+</main>
 
 </body>
 </html>
