@@ -1,0 +1,47 @@
+:root {
+    --white: #ffffff;
+    --black: #0f172a;
+
+    --gray-100: #f1f5f9;
+
+    --blue-200: #bfdbfe;
+    --blue-400: #60a5fa;
+
+    --purple-200: #ddd6fe;
+    --purple-500: #7c3aed;
+
+    --green-200: #bbf7d0;
+    --green-500: #16a34a;
+}
+body {
+    background-color: var(--gray-100);
+    color: var(--black);
+}
+
+section {
+    border-color: var(--blue-400);
+    background-color: var(--white);
+}
+
+.block-element {
+    background-color: var(--blue-200);
+}
+
+.inline-element {
+    background-color: var(--purple-200);
+}
+
+.flex-container {
+    background-color: var(--green-200);
+}
+
+.flex-item {
+    border-color: var(--green-500);
+    background-color: var(--white);
+}
+
+.content-box,
+.border-box {
+    border-color: var(--purple-500);
+    background-color: var(--purple-200);
+}

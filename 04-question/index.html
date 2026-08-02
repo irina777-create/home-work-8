@@ -2,9 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>CSS властивості</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<h1>Вивчення CSS властивостей</h1>
+
+<section>
+    <h2>display: block</h2>
+
+    <span class="block-element">Перший блоковий елемент</span>
+    <span class="block-element">Другий блоковий елемент</span>
+
+    <p>
+        Після застосування <strong>display: block</strong> кожен елемент
+        займає окремий рядок і доступну ширину.
+    </p>
+</section>
+
+<section>
+    <h2>display: inline</h2>
+
+    <div class="inline-element">Перший елемент</div>
+    <div class="inline-element">Другий елемент</div>
+
+    <p>
+        Після застосування <strong>display: inline</strong> блокові елементи
+        розташовуються в одному рядку. Властивості width і height для них
+        не працюють.
+    </p>
+</section>
+
+<section>
+    <h2>display: flex</h2>
+
+    <div class="flex-container">
+        <div class="flex-item">Елемент 1</div>
+        <div class="flex-item">Елемент 2</div>
+        <div class="flex-item">Елемент 3</div>
+    </div>
+
+    <p>
+        Властивість <strong>display: flex</strong> розташувала дочірні
+        елементи в один рядок і дозволила керувати відстанню між ними.
+    </p>
+</section>
+
+<section>
+    <h2>box-sizing</h2>
+
+    <div class="content-box">content-box</div>
+    <div class="border-box">border-box</div>
+
+    <p>
+        За значення <strong>content-box</strong> padding і border додаються
+        до заданої ширини елемента. За значення
+        <strong>border-box</strong> вони вже входять у його загальну ширину.
+    </p>
+</section>
 
 </body>
 </html>
